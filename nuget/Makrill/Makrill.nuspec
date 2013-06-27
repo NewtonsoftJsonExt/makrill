@@ -9,7 +9,7 @@
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>https://github.com/wallymathieu/makrill</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Using parsing Newtonsoft tokens to standard .net classes.</description>
+    <description>Parsing Newtonsoft tokens to standard .net classes.</description>
     <copyright>Copyright 2013</copyright>
     <references>
       <reference file="Makrill.dll" />
