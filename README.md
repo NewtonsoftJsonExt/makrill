@@ -1,4 +1,4 @@
 makrill
 =======
 
-Using parsing Newtonsoft tokens to standard .net classes
+Parsing Newtonsoft tokens to standard .net classes.
