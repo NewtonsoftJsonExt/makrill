@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Makrill
 {
@@ -64,7 +65,54 @@ namespace Makrill
             throw new Exception("Missing end");
         }
 
-        private static object ExpectArray(JsonReader reader)
+        internal static object[] ExpectArray(JArray reader)
+        {
+            var array = new List<Object>();
+            foreach (var token in reader.AsJEnumerable())
+            {
+                array.Add(ExpectValue(token));
+            }
+            return array.ToArray();
+        }
+
+        internal static object ExpectValue(JToken token)
+        {
+            switch (token.Type)
+            {
+                case JTokenType.String:
+                    return token.ToObject<string>();
+                case JTokenType.Integer:
+                    return (token.ToObject<Int64>());
+                case JTokenType.Boolean:
+                    return (token.ToObject<Boolean>());
+                case JTokenType.Bytes:
+                    return (token.ToObject<Byte[]>());
+                case JTokenType.Date:
+                    return (token.ToObject<DateTime>());
+                case JTokenType.Float:
+                    return (token.ToObject<float>());
+                case JTokenType.Null:
+                    return (null);
+                case JTokenType.Array:
+                    return (ExpectArray((JArray)token));
+                case JTokenType.Object:
+                    return (ExpectObject((JObject)token));
+                default:
+                    throw new Exception("Array: Unrecognized token: " + token.Type.ToString());
+            }
+        }
+
+        internal static object ExpectObject(JObject token)
+        {
+            var dic = new Dictionary<string, object>();
+            foreach (var property in token.Properties())
+            {
+                dic.Add(property.Name, ExpectValue(property.Value));
+            }
+            return dic;
+        }
+
+        internal static object ExpectArray(JsonReader reader)
         {
             var array = new List<Object>();
             while (reader.Read())
@@ -94,7 +142,7 @@ namespace Makrill
 
         public override bool CanConvert(Type objectType)
         {
-            return objectType == typeof (Dictionary<string, object>);
+            return objectType == typeof(Dictionary<string, object>);
         }
     }
 }

@@ -1,5 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using NUnit.Framework;
+using Newtonsoft.Json.Linq;
 using WrappedNewtonsoft = Makrill.JsonConvert;
 namespace Makrill.Tests
 {
@@ -61,6 +65,17 @@ namespace Makrill.Tests
                                                                       });
             Assert.That(serialized.Replace(" ", "").Replace("\r", "").Replace("\n", ""),
                         Is.EqualTo(expected.Replace(" ", "").Replace("\n", "").Replace("\n", "")));
+        }
+
+        [Test]
+        public void RegressionTest()
+        {
+            var jsonConvert = new WrappedNewtonsoft();
+            var result = jsonConvert.Deserialize<object[]>("[['1',['1','2',[1,3,null,{'1':1,'2':[10,20,30]}]]],[['3'],['4'],[5]]]");
+
+            var r = result.Select(o => jsonConvert.Deserialize((JArray)o)).ToArray();
+            var condition1 = r.Select(r1 => r1.Where(c => !c.GetType().IsArray && !(c is string))).Where(r1 => r1.Any()).SelectMany(r1 => r1);
+            Assert.That(condition1, Is.EquivalentTo(new object[0]));
         }
     }
 }
