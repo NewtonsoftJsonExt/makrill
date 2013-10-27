@@ -18,9 +18,9 @@ namespace Makrill.Tests
             }
             if (value is string)
             {
-                return JsonConvert.SerializeObject(JsonConvert.DeserializeObject((string) value), Formatting.Indented);
+                return Newtonsoft.Json.JsonConvert.SerializeObject(Newtonsoft.Json.JsonConvert.DeserializeObject((string) value), Formatting.Indented);
             }
-            return JsonConvert.SerializeObject(value, Formatting.Indented);
+            return Newtonsoft.Json.JsonConvert.SerializeObject(value, Formatting.Indented);
         }
 
         public override bool Matches(object actual)
