@@ -56,7 +56,7 @@ namespace :mono do
   desc "test with nunit"
   task :test => :build do |n|
     tlib = "Makrill.Tests"
-    sh "mono --runtime=v4.0.30319 #{nunit_cmd()} src/#{tlib}/bin/Debug/#{tlib}.dll -noxml " do  |ok, res|
+    sh "mono --runtime=v4.0.30319 #{nunit_cmd()} src/#{tlib}/bin/Debug/#{tlib}.dll -noxml -process=single" do  |ok, res|
       if !ok
         abort 'Nunit failed!'
       end
