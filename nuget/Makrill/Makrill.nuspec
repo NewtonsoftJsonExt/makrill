@@ -3,7 +3,7 @@
   <metadata>
     <id>Makrill</id>
     <title>Makrill</title>
-    <version>0.3.3</version>
+    <version>0.4.0</version>
     <authors>Oskar Gewalli</authors>
     <owners>Oskar Gewalli</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
@@ -11,6 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Parsing Newtonsoft tokens to standard .net classes.</description>
     <copyright>Copyright 2013</copyright>
+    <releaseNotes>Updated with better tests and less code.</releaseNotes>
     <references>
       <reference file="Makrill.dll" />
     </references>
