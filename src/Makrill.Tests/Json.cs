@@ -3,7 +3,7 @@ using NUnit.Framework.Constraints;
 
 namespace Makrill.Tests
 {
-    internal class Json
+    internal class Js
     {
         internal static IResolveConstraint IsEqualTo(Object expected)
         {
