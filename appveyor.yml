@@ -1,2 +1,3 @@
 build_script:
-  - .\src\build.cmd build
+  - cd src
+  - build.cmd build

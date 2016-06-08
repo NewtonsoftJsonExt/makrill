@@ -49,10 +49,22 @@ Target "clean" (fun _ ->
             "Makrill.Tests/bin/Debug"
             ] 
 )
+let setParams defaults =
+        { defaults with
+            Verbosity = Some(Quiet)
+            Targets = ["Rebuild"]
+            Properties =
+                [
+                    "Optimize", "True"
+                    "DebugSymbols", "True"
+                    "Configuration", "Release"
+                    "Platform", "Any CPU"
+                ]
+         }
 
 Target "build" (fun _ ->
-    !! solutionFile
-    |> MSBuildRelease "" "Rebuild"
+    solutionFile
+    |> build setParams
     |> ignore
 )
 

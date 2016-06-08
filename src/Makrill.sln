@@ -18,40 +18,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|.NET = Debug|.NET
 		Debug|Any CPU = Debug|Any CPU
-		Debug|Mixed Platforms = Debug|Mixed Platforms
-		Debug|x86 = Debug|x86
-		Release|.NET = Release|.NET
 		Release|Any CPU = Release|Any CPU
-		Release|Mixed Platforms = Release|Mixed Platforms
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C9EA9975-0609-4330-A69F-B8C608A46E28}.Debug|.NET.ActiveCfg = Debug|Any CPU
 		{C9EA9975-0609-4330-A69F-B8C608A46E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C9EA9975-0609-4330-A69F-B8C608A46E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C9EA9975-0609-4330-A69F-B8C608A46E28}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{C9EA9975-0609-4330-A69F-B8C608A46E28}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{C9EA9975-0609-4330-A69F-B8C608A46E28}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{C9EA9975-0609-4330-A69F-B8C608A46E28}.Release|.NET.ActiveCfg = Release|Any CPU
 		{C9EA9975-0609-4330-A69F-B8C608A46E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9EA9975-0609-4330-A69F-B8C608A46E28}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C9EA9975-0609-4330-A69F-B8C608A46E28}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{C9EA9975-0609-4330-A69F-B8C608A46E28}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{C9EA9975-0609-4330-A69F-B8C608A46E28}.Release|x86.ActiveCfg = Release|Any CPU
-		{4F8C1DA9-B511-44E8-AAB8-47218A7ADFEB}.Debug|.NET.ActiveCfg = Debug|Any CPU
 		{4F8C1DA9-B511-44E8-AAB8-47218A7ADFEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4F8C1DA9-B511-44E8-AAB8-47218A7ADFEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F8C1DA9-B511-44E8-AAB8-47218A7ADFEB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{4F8C1DA9-B511-44E8-AAB8-47218A7ADFEB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{4F8C1DA9-B511-44E8-AAB8-47218A7ADFEB}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{4F8C1DA9-B511-44E8-AAB8-47218A7ADFEB}.Release|.NET.ActiveCfg = Release|Any CPU
 		{4F8C1DA9-B511-44E8-AAB8-47218A7ADFEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F8C1DA9-B511-44E8-AAB8-47218A7ADFEB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4F8C1DA9-B511-44E8-AAB8-47218A7ADFEB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{4F8C1DA9-B511-44E8-AAB8-47218A7ADFEB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{4F8C1DA9-B511-44E8-AAB8-47218A7ADFEB}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
