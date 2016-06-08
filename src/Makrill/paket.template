@@ -1,3 +1,4 @@
+type project
 id Makrill
 title Makrill
 version 0.5.0
