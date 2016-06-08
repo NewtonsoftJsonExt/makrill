@@ -1,0 +1,12 @@
+id Makrill
+title Makrill
+version 0.5.0
+authors Oskar Gewalli
+owners Oskar Gewalli
+licenseUrl http://www.apache.org/licenses/LICENSE-2.0
+projectUrl https://github.com/NewtonsoftJsonExt/makrill
+requireLicenseAcceptance false
+description
+    Parsing Newtonsoft tokens to standard .net classes.
+releaseNotes
+    Upgraded Newtonsoft.Json to v8.0.3.

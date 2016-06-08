@@ -1,0 +1,8 @@
+NUGET
+  remote: https://www.nuget.org/api/v2
+  specs:
+    FAKE (4.28)
+    Newtonsoft.Json (8.0.3)
+    NuGet.CommandLine (3.4.3)
+    NUnit (2.6.4)
+    NUnit.Runners (2.6.4)
