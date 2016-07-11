@@ -1,15 +1,11 @@
 ﻿using System;
-using Newtonsoft.Json.Bson;
-using System.Globalization;
-using Newtonsoft.Json.Utilities;
 using System.Collections.Generic;
-using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 
 namespace Makrill
 {
     /// <summary>
-    /// Convert json array and json objects to .net array and IDictionary<string,object>
+    /// Convert json array and json objects to .net array and <see cref="IDictionary<string,object>"/>
     /// </summary>
     public class ArrayAndDictionaryConverter : JsonConverter
     {

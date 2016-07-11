@@ -1,6 +1,6 @@
 type file
-id Makrill
-title Makrill
+id Makrill.Src
+title Makrill.Src
 version 0.5.0
 authors Oskar Gewalli
 owners Oskar Gewalli
@@ -10,9 +10,9 @@ requireLicenseAcceptance false
 description
     Parsing Newtonsoft tokens to standard .net classes.
 releaseNotes
-    Upgraded Newtonsoft.Json to v8.0.3.
+    Source files for Makrill
 files
-    JsonConvert.cs => Content
-    ArrayAndDictionaryConverter.cs => Content
+    ../Makrill/JsonConvert.cs => Content
+    ../Makrill/ArrayAndDictionaryConverter.cs => Content
 dependencies
     Newtonsoft.Json

@@ -1,11 +1,12 @@
-using System;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace Makrill
 {
     public class JsonConvert
     {
+        /// <summary>
+        /// Using array and dictionary converter
+        /// </summary>
         public T Deserialize<T>(string val)
         {
             var settings = new JsonSerializerSettings();
