@@ -5,15 +5,20 @@ using Newtonsoft.Json;
 namespace Makrill
 {
     /// <summary>
-    /// Convert json array and json objects to .net array and <see cref="IDictionary<string,object>"/>
+    /// Convert json array and json objects to .net array and IDictionary
     /// </summary>
     public class ArrayAndDictionaryConverter : JsonConverter
     {
+        /// <summary>
+        /// Writes the JSON repressentation for the object value.
+        /// </summary>
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
             serializer.Serialize(writer, value);
         }
-
+        /// <summary>
+        /// Reads the JSON arrays info arrays and json objects into dictionaries
+        /// </summary>
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue,
                                         JsonSerializer serializer)
         {
