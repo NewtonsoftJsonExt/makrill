@@ -4,4 +4,4 @@ makrill [![Build Status](https://travis-ci.org/NewtonsoftJsonExt/makrill.svg?bra
 Parsing Newtonsoft tokens to standard .net classes.
 
 
-Not much code, why not just copy paste it into a project that uses newtonsoft?
+Not much code, use Makrill.Src nuget package to get a copy of the source code into your application.
