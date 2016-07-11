@@ -78,7 +78,7 @@ Target "test" (fun _ ->
 )
 
 //dotnet pack ./Makrill/
-(*
+
 Target "pack" (fun _ ->
     Paket.Pack(fun p -> { p with OutputPath = "bin"})
 )
@@ -86,7 +86,7 @@ Target "pack" (fun _ ->
 Target "push" (fun _ ->
     Paket.Push(fun p -> { p with WorkingDir = "bin" })
 )
-*)
+
 
 
 

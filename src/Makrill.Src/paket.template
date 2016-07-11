@@ -1,7 +1,7 @@
 type file
 id Makrill.Src
 title Makrill.Src
-version 0.5.0
+version 0.6.0
 authors Oskar Gewalli
 owners Oskar Gewalli
 licenseUrl http://www.apache.org/licenses/LICENSE-2.0
@@ -15,4 +15,4 @@ files
     ../Makrill/JsonConvert.cs => Content
     ../Makrill/ArrayAndDictionaryConverter.cs => Content
 dependencies
-    Newtonsoft.Json
+    Newtonsoft.Json 9.0.1
