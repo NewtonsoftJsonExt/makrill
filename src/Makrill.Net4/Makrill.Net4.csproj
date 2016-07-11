@@ -39,8 +39,12 @@
     <Reference Include="System.Web.Extensions" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArrayAndDictionaryConverter.cs" />
-    <Compile Include="JsonConvert.cs" />
+    <Compile Include="..\Makrill\ArrayAndDictionaryConverter.cs">
+      <Link>ArrayAndDictionaryConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Makrill\JsonConvert.cs">
+      <Link>JsonConvert.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

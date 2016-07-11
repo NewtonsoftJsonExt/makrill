@@ -110,3 +110,6 @@ UpgradeLog*.XML
 .vagrant
 
 .fake
+
+# vs2015 +
+.vs

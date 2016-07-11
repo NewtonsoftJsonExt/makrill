@@ -1,0 +1,25 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Parsing Newtonsoft tokens to standard .net classes.",
+  "authors": [ "Oskar Gewalli" ],
+  "packOptions": {
+    "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+    "repository": {
+      "url": "https://github.com/NewtonsoftJsonExt/makrill",
+      "type": "git"
+    },
+    "projectUrl": "https://github.com/NewtonsoftJsonExt/makrill",
+    "requireLicenseAcceptance": false
+  },
+  "dependencies": {"Newtonsoft.Json": "9.0.1"},
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50",
+      "dependencies": {
+        "NETStandard.Library": "1.6.0"
+      }
+    },
+    "net45": {
+    }
+  }
+}

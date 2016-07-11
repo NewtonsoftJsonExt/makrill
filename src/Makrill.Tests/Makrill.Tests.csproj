@@ -49,9 +49,9 @@
     <None Include="paket.references" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Makrill\Makrill.csproj">
+    <ProjectReference Include="..\Makrill.Net4\Makrill.Net4.csproj">
       <Project>{C9EA9975-0609-4330-A69F-B8C608A46E28}</Project>
-      <Name>Makrill</Name>
+      <Name>Makrill.Net4</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
