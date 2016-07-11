@@ -77,18 +77,18 @@ Target "test" (fun _ ->
             OutputFile = "TestResults.xml" })
 )
 
-
+//dotnet pack ./Makrill/
+(*
 Target "pack" (fun _ ->
-    Paket.Pack(fun p -> 
-        { p with
-            OutputPath = "bin"})
+    Paket.Pack(fun p -> { p with OutputPath = "bin"})
 )
 
 Target "push" (fun _ ->
-    Paket.Push(fun p -> 
-        { p with
-            WorkingDir = "bin" })
+    Paket.Push(fun p -> { p with WorkingDir = "bin" })
 )
+*)
+
+
 
 
 // --------------------------------------------------------------------------------------
